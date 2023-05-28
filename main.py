@@ -26,11 +26,8 @@ y = churn_df['Exited']
 # check missing values
 churn_df.isnull().sum()
 
-# numerical features
+# check feature distribution
 churn_df[['CreditScore', 'Age', 'Tenure', 'NumOfProducts','Balance', 'EstimatedSalary']].describe()
-
-# check the feature distribution
-churn_df.describe()
 
 # boxplot, distplot, countplot
 import matplotlib.pyplot as plt
