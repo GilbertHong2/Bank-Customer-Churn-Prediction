@@ -127,14 +127,20 @@ classifier_KNN = KNeighborsClassifier()
 # Random Forest
 classifier_RF = RandomForestClassifier()
 
-# Train the model
+# Train the models
 classifier_logistic.fit(X_train, y_train)
+classifier_KNN.fit(X_train, y_train)
+classifier_RF.fit(X_train, y_train)
 
-# Prediction of test data
+# Predictions
 classifier_logistic.predict(X_test)
+classifier_KNN.predict(X_test)
+classifier_RF.predict(X_test)
 
 # Accuracy of test data
 classifier_logistic.score(X_test, y_test)
+classifier_KNN.score(X_test, y_test)
+classifier_RF.score(X_test, y_test)
 
 # Use Grid Search to Find Optimal Hyperparameters
 
